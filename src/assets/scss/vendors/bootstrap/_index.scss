@@ -1,0 +1,57 @@
+@import '_modal.scss';
+
+// Colors
+$theme-colors: (
+  "primary":    $green,
+  "secondary":  $gray,
+  "success":    $validated,
+  "info":       $blue,
+  "warning":    $yellow,
+  "danger":     $error,
+  "light":      $grayBg,
+  "dark":       $black
+
+);
+
+$colors: (
+  "gray": $gray
+);
+
+$border-color: $secondaryBlue;
+
+// Grid System And Spacing
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 667px,
+  lg: 1023px,
+  xl: 1440px
+);
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px
+// );
+
+$grid-gutter-width: 24px;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: ($spacer * .75),
+  4: $spacer,
+  5: ($spacer * 1.5),
+  6: ($spacer * 2),
+  7: ($spacer * 3),
+  8: ($spacer * 3.5)
+);
+
+// Bootstrap and its default variables
+@import '~/node_modules/bootstrap/scss/bootstrap';
+// BootstrapVue and its default variablesspacingspacing
+@import '~/node_modules/bootstrap-vue/src/index.scss';
+

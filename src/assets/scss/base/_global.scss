@@ -1,0 +1,141 @@
+body {
+  font-family: Raleway;
+  color: $black;
+}
+
+.heroTitle {
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: 0px;
+}
+
+h1 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: 0px;
+
+  @include mq {
+    font-size: 42px;
+  }
+}
+
+h2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+
+  @include mq {
+      font-size: 24px;
+  }
+}
+
+h3,
+p.bold {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+
+h4 {
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0px;
+} d-flex align-items-center
+
+p {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  margin-bottom: 0;
+}
+
+p.small {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+nav a, .nav a {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: $gray;
+}
+
+.breadcrumbLink {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 13px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: $green;
+  // &:hover {
+  //   text-decoration-line: underline;
+  // }
+}
+
+.link, a {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+  color: $green;
+  cursor: pointer;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.form-group--error {
+  border: 1px solid $error !important;
+}
+
+.error {
+  color: $error !important;
+}
+
+.gray {
+  color: $gray;
+}
+
+.black {
+  color: $black;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}

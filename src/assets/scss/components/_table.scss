@@ -1,0 +1,88 @@
+.table {
+  border: 1px solid $secondaryBlue;
+
+  &--full,
+  &--partial,
+  &--canceled {
+    p {
+      color: $black !important;
+    }
+  }
+
+  &--full {
+    background-color: #B9E1B2;
+  }
+
+  &--partial {
+    background-color: #F1E4C3;
+  }
+
+  &--canceled {
+    background-color: #EDD6D4;
+  }
+
+  &--empty {
+    background-color: $disabled;
+    
+    p {
+      color: $disabled !important;
+    }
+  }
+
+  th,
+  td {
+    vertical-align: middle !important;
+  }
+
+  thead {
+    background-color: $green;
+    color: $white;
+
+    th {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      &.w-100 {
+        width: 100%;
+      }
+
+      &.w-200 {
+        width: 200px;
+      }
+
+      span {
+        font-size: 24px;
+
+        /deep/ svg {
+          cursor: pointer;
+
+          * {
+            fill: $yellow;
+          }
+        }
+      }
+    }
+  }
+
+  tbody {
+    th[scope='row'],
+    .breadcrumbLink {
+      color: $green;
+    }
+
+    tr {
+      &:nth-child(even) {
+        background-color: $grayBg;
+      }
+
+      th, td {
+        padding-top: 17px;
+        padding-bottom: 17px;
+      }
+    }
+
+    p {
+      color: $gray;
+    }
+  }
+}

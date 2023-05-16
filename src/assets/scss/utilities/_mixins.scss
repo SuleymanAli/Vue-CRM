@@ -1,0 +1,19 @@
+@mixin mq($width: "md") {
+	@if($width == "md"){
+		@media (min-width: 667px) {
+			@content			
+		}
+	} @else if($width == "sm"){
+		@media (min-width: 375px) {
+			@content			
+		}
+	} @else if($width == "lg") {
+		@media (min-width: 1023px) {
+			@content			
+		}
+	} @else if($width == "xl"){
+		@media (min-width: 1440px) {
+			@content			
+		}
+	}
+}
